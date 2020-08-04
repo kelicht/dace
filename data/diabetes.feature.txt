@@ -1,0 +1,9 @@
+@0 -1 N:INC Pregnancies
+@1 -1 S Glucose
+@2 -1 S BloodPressure
+@3 -1 S SkinThickness
+@4 -1 S Insulin
+@5 -1 S BMI
+@6 -1 S DiabetesPedigreeFunction
+@7 -1 N:INC Age
+@data
