@@ -180,7 +180,7 @@ $ python mlp_ce.py 3
 
 ### RandomForest classifier (`forest_ce.py`)
 ```
-$ python forest_ce.py
+$ python forest_ce.py 3
 
 # Demonstration: linear_ce.py
 - Dataset: German Dataset
