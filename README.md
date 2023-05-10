@@ -1,7 +1,7 @@
 # DACE: Distribution-Aware Counterfactual Explanation
 
 Temporary repository for our paper ["*DACE: Distribution-Aware Counterfactual Explanation by Mixed-Integer Linear Optimization*,"](https://www.ijcai.org/Proceedings/2020/395) in IJCAI-20.
-This repository includes the code and scripts for reproducing the experimental results in our [full version in TJSAI](https://www.jstage.jst.go.jp/article/tjsai/36/6/36_36-6_C-L44/_article/-char/en) of our IJCAI paper. 
+This repository includes the code and scripts for reproducing the experimental results in [our full version](https://www.jstage.jst.go.jp/article/tjsai/36/6/36_36-6_C-L44/_article/-char/en) in TJSAI of our IJCAI paper. 
 
 
 DACE is a framework of Counterfactual Explanation (CE) that optimizes the following objective function: 
