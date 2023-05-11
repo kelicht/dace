@@ -229,7 +229,7 @@ class ActionCandidates():
             if(self.Q_==None): self.Q_ = [None if self.feature_constraints_[d]=='FIX' else CumulativeDistributionFunction(self.grids_[d], self.X_[:, d]) for d in range(self.D_)]
             for d in range(self.D_):
                 if(self.Q_[d]==None):
-                    self.costs_.append([])
+                    self.costs_.append([ 0 ])
                 else:
                     Q_d = self.Q_[d]
                     Q_0 = Q_d(x[d])

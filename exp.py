@@ -32,7 +32,7 @@ def exp_sens(N=50, dataset='h', K=4, time_limit=600):
         print('### Cost: DACE')
         for alpha in alphas:
             print('#### alpha = {}'.format(alpha))
-            a = ce.extract(x, K=K, cost_type='DACE', alpha=alpha, time_limit=time_limit)
+            a = ce.extract(x, max_change_num=K, cost_type='DACE', alpha=alpha, time_limit=time_limit)
             if(a!=-1): 
                 print(a)
                 for key in dict_sens.keys(): dict_sens[key][alpha].append(a.scores_[key])
@@ -88,7 +88,7 @@ def exp_compare(N=1, dataset='h', model='LR', K=4, time_limit=600):
         print('## {}-th Denied Individual '.format(n+1))
         for cost in ['TLPS', 'MAD', 'PCC']:
             print('### Cost: ', cost)
-            a = ce.extract(x, K=K, cost_type=cost, time_limit=time_limit)
+            a = ce.extract(x, max_change_num=K, cost_type=cost, time_limit=time_limit)
             if(a!=-1): 
                 print(a)
                 for key in dict_comp[cost].keys(): dict_comp[cost][key].append(a.scores_[key])
@@ -98,7 +98,7 @@ def exp_compare(N=1, dataset='h', model='LR', K=4, time_limit=600):
         print('### Cost: DACE')
         for alpha in alphas:
             print('#### alpha = {}'.format(alpha))
-            a = ce.extract(x, K=K, cost_type='DACE', alpha=alpha, time_limit=time_limit)
+            a = ce.extract(x, max_change_num=K, cost_type='DACE', alpha=alpha, time_limit=time_limit)
             if(a!=-1): 
                 print(a)
                 for key in dict_dace[alpha].keys(): dict_dace[alpha][key].append(a.scores_[key])
